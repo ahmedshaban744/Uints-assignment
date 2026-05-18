@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="All Test Cases">
+
+    <test name="SmokeTest Case" parallel="methods" thread-count="4">
+
+        <classes>
+            <class name="validTestCase.logginPage"/>
+            <class name="validTestCase.HomePageValid"></class>
+            <class name="validTestCase.PymentsValidScenarios"></class>
+            <class name="InvalidTestCase.CheckOutForm"></class>
+            <class name="InvalidTestCase.logginPageInvalid"></class>
+
+        </classes>
+    </test>
+
+</suite>
